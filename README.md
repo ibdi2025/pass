@@ -1,13 +1,22 @@
-Cielom projektu 'Pass' je Python program na vytvaranie uzivatelskych uctov a ich zapisovanie do suboru 'pass.txt'. 
-Program bude vo finlnej verzii poskytovat nasledovne funkcionality:
+Cielom projektu 'Pass' je Python program na vytvaranie uzivatelskych uctov a ich zapisovanie do suboru 'pass.txt' spolu s hashom hesla.
 
-(parrent class)
-- vytvorenie alebo otvorenie suboru (def)
+Program bude vo finalnej verzii poskytovat nasledovne funkcionality:
+
+(parent class 1)
+- vytvorenie listu uz existujúcich username; 
+	(child of parent 1)
+	- tlac listu
+
+(parent class 2)
+- vytvorenie suoru pass.tx ak neexistuej(def)
 - vstup uzivatelskeho mena (def)
-- kontrola uzivatelskeho mena oproti suboru - databaze uzivatelov/hashov (def)
-    - ak uzivatel existuje, program sa ukonci
+- kontrola uzivatelskeho mena oproti suboru pass.txt - databaze uzivatelov/hashov (def)
+    - ak uzivatelske meno existuje, program sa ukonci
 - vstup uzivatelskeho hesla
-- vytvorenie hashu hesla (def->child class->return to parrent class)
-- zapis mena a hashu do suboru - databazy uzivatelov/hashov (def)
+	(child of parent 2)
+	- vytvorenie hashu hesla (def->child class->return to parent class)
+- zapis uzivatelskeho mena a hashu do suboru pass.txt - databazy uzivatelov/hashov (def)
+	(child of parent 2)
 - kontrola uzivatelskeho hesla/hashu (def->child class->return to parrent class)
+
 - nasledna akcia ak sa heslo/hash zhoduje
