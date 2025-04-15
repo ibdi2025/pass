@@ -3,7 +3,7 @@ Cielom projektu 'Pass' je Python program na vytvaranie uzivatelskych uctov a ich
 Program bude vo finalnej verzii poskytovat nasledovne funkcionality:
 
 (parent class 1)
-- vytvorenie listu uz existujúcich username; 
+- vytvorenie listu uz existujúcich username; pri prvom spusteni je list prazdny. list je nastaveny na 5 uzivatelov.
 	(child of parent 1)
 	- tlac listu
 
